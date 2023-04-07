@@ -1,10 +1,10 @@
-import { Contact } from "./section/Contact"
+import { FullPageWrapper } from "./FullPage/Index"
 
 export const App = () => {
 
   return (
     <>
-      <Contact />
+      <FullPageWrapper />
     </>
   )
 }
