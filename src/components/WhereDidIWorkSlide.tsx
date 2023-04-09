@@ -1,9 +1,10 @@
+import { WhereDidIWorkExperienceSlide } from "./WhereDidIWorkExperienceSlide"
 
 export const WhereDidIWorkSlide = () => {
 
   return (
     <div>
-      <h1 className="text-white">Company Slide</h1>
+      <WhereDidIWorkExperienceSlide />
     </div>
   )
 }
