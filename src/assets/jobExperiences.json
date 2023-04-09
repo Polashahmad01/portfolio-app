@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "companyName": "Zination Technologies",
+    "role": "Junior Software Engineer",
+    "duration": "Jan 2020 - Jan 2021",
+    "description": "Zination is a software development firm with 15+ years of experience in building web applications, mobile apps, chatbots, and e-commerce solutions. I worked as a junior front-end developer engaged in building web applications for multiple clients."
+  },
+  {
+    "id": 2,
+    "companyName": "Hanaboso Studio",
+    "role": "Front End Developer",
+    "duration": "Mar 2021 - Apr 2022",
+    "description": "Hanaboso offers data integration and cloud-based solutions to help businesses grow and improve their processes and customer communication. Here, I was responsible for building the front end for web applications along with other team members."
+  },
+  {
+    "id": 3,
+    "companyName": "Spontivly",
+    "role": "Full Stack Developer",
+    "duration": "Jun 2022 - Feb 2023",
+    "description": "Spontivly is a Community Management System that offers real-time analytics for measuring community engagement, growth, and impact across different platforms. I worked as a full-stack developer, responsible for building, deploying, and maintaining web applications along with team management"
+  }
+]
