@@ -1,6 +1,7 @@
 import { Splide, SplideSlide, Options } from "@splidejs/react-splide"
 import '@splidejs/react-splide/css'
-import { CompanyExperience, CompanyExperiencePros } from "./CompanyExperience"
+import { CompanyExperience } from "./CompanyExperience"
+import { CompanyExperiencePros } from "./hooks/useCompanyExperience"
 import jobExperiences from "../assets/jobExperiences.json"
 
 export const WhereDidIWorkExperienceSlide = () => {
