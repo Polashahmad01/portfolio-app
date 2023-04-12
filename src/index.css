@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  color: white !important;
-}
-
 .fp-watermark {
   display: none !important;
 }
