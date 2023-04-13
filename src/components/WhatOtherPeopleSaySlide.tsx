@@ -17,7 +17,7 @@ export const WhatOtherPeopleSaySlide = () => {
   }
 
   return (
-    <div className="text-white wrapper">
+    <div className="text-white wrapper mr-4">
       <Splide
         options={options}
       >
