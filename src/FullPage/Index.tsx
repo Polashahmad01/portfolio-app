@@ -1,9 +1,10 @@
 import ReactFullPage from "@fullpage/react-fullpage"
+import { WhatToolIUse } from "../section/WhatToolIUse"
 import { WhereDidIWork } from "../section/WhereDidIWork"
 import { WhatOtherPeopleSay } from "../section/WhatOtherPeopleSay"
 import { Contact } from "../section/Contact"
 
-const anchors = ["where-did-i-work", "what-other-people-say", "contact"]
+const anchors = ["what-i-use", "where-did-i-work", "what-other-people-say", "contact"]
 
 export const FullPageWrapper = () => {
 
@@ -17,6 +18,7 @@ export const FullPageWrapper = () => {
       render={() => {
         return (
           <>
+            <WhatToolIUse />
             <WhereDidIWork />
             <WhatOtherPeopleSay />
             <Contact />
