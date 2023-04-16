@@ -1,11 +1,12 @@
 import ReactFullPage from "@fullpage/react-fullpage"
+import { WhoAmI } from "../section/WhoAmI"
 import { WhatIAmComfortableWith } from "../section/WhatIAmComfortableWith"
 import { WhatToolIUse } from "../section/WhatToolIUse"
 import { WhereDidIWork } from "../section/WhereDidIWork"
 import { WhatOtherPeopleSay } from "../section/WhatOtherPeopleSay"
 import { Contact } from "../section/Contact"
 
-const anchors = ["what-i-am-comfortable-with", "what-i-use", "where-did-i-work", "what-other-people-say", "contact"]
+const anchors = ["who-am-i", "what-i-am-comfortable-with", "what-i-use", "where-did-i-work", "what-other-people-say", "contact"]
 
 export const FullPageWrapper = () => {
 
@@ -19,6 +20,7 @@ export const FullPageWrapper = () => {
       render={() => {
         return (
           <>
+            <WhoAmI />
             <WhatIAmComfortableWith />
             <WhatToolIUse />
             <WhereDidIWork />

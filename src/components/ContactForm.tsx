@@ -11,7 +11,7 @@ export const ContactForm = () => {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-indigo-600">Let's </span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-indigo-800">Talk</span>
         </h1>
-        <p className="text-base leading-5 text-center opacity-50 mb-8 sm:text-center md:w-11/12 md:text-lg md:text-left lg:w-11/12 lg:text-left">
+        <p className="text-base leading-5 text-center mb-8 sm:text-center md:w-11/12 md:text-lg md:text-left lg:w-11/12 lg:text-left">
           If you're interested in learning more about me, collaborating on a project, 
           or simply curious and want to say hello, please don't hesitate to send me a message. 
           I enjoy receiving messages from people on the internet!
