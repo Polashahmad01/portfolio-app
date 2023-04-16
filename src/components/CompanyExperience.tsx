@@ -5,7 +5,7 @@ export const CompanyExperience = (props: CompanyExperiencePros) => {
 
   return (
     <div className="grid grid-rows-1 h-full place-items-center">
-      <div className="mb-8 w-3/4">
+      <div className="mb-8 w-3/4 rounded-2xl p-5" style={{ backgroundColor: "#181818"}}>
         <h1 className="text-3xl font-black tracking-wider mb-4 mx-4 sm:text-4xl sm:mx-4 md:mx-0">{companyName}</h1>
         <p className="text-xs mb-1 mx-4 sm:text-sm sm:mx-4 md:mx-0">{role}</p>
         <p className="opacity-60 text-xs mb-4 mx-4 sm:text-sm sm:mx-4 md:mx-0">{duration}</p>
