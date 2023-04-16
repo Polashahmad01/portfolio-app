@@ -11,7 +11,7 @@ interface ToolsIUseProps {
 export const ToolsIUse = () => {
 
   return (
-    <div className="text-white mx-4 grid grid-cols-1 sm:grid-cols-3">
+    <div className="text-white mx-4 grid grid-cols-1 sm:gap-12 md:grid-cols-3 md:ml-36">
       {tools.map((tool: ToolsIUseProps) => (
         <Tools
           key={tool.id}

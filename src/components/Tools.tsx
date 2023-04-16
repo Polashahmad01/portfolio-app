@@ -8,23 +8,21 @@ export const Tools = (props: ToolsProps) => {
   const { title, items, icon } = props
 
   return (
-    <div className="flex flex-col justify-center gap-8 items-center mt-8 sm:mt-14">
-      <div>
-        <div className="mb-8">        
-          <img className="h-20 w-20 sm:h-32 sm:w-32" src={icon} alt={title}/>
-        </div>
-        <h2 className="text-lg font-bold tracking-wider mb-4 sm:text-2xl">{title}</h2>
-        <ul className="mb-8 sm:mb-0">
-          {items.map((item: string, index: number) => (
-            <li
-              className=" text-sm my-1 font-normal sm:text-base sm:font-medium"
-              key={index}
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
+    <div className="mt-4 sm:mt-10 rounded-2xl p-5 transition mb-12 sm:mb-0" style={{ backgroundColor: "#181818"}}>
+      <div className="mb-4">        
+        <img className="h-16 w-16 m-auto" src={icon} alt={title}/>
       </div>
+      <h2 className="text-lg font-bold mb-4 text-center sm:text-2xl">{title}</h2>
+      <ul className="mb-8 sm:mb-0">
+        {items.map((item: string, index: number) => (
+          <li
+            className=" text-sm my-1 font-normal text-center sm:text-base sm:font-medium"
+            key={index}
+          >
+            {item}
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
