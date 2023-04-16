@@ -7,7 +7,7 @@ export const Footer = () => {
       <hr className="opacity-50" />
       <footer className="h-24 bg-black px-4">
         <div className="flex flex-col-reverse justify-center items-center gap-2 h-full sm:flex-row sm:justify-between md:flex md:flex-row md:justify-between md:container md:m-auto">
-          <p className="text-sm opacity-60 font-poppins">All rights reserved &copy; {date} Polash Ahmad.</p>
+          <p className="text-sm font-poppins">All rights reserved &copy; {date} Polash Ahmad.</p>
           <div className="flex">
             <div className="h-15 w-15 pr-4 ">
               <a 
