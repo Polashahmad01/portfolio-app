@@ -2,7 +2,7 @@ import { useContactForm } from "./hooks/useContactForm"
 import { EmailSubmission } from "./EmailSubmission"
 
 export const ContactForm = () => {
-  const { contactForm, isSuccessfullySubmited, onFormInputChangeHandler, onFormTextAreaChangeHandler, onFormSubmitHandler } = useContactForm()
+  const { contactForm, isSuccessfullySubmited, sendButtonText, onFormInputChangeHandler, onFormTextAreaChangeHandler, onFormSubmitHandler } = useContactForm()
 
   return (
     <div className="text-white font-poppins px-4 md:container md:flex md:mx-auto md:gap-8 md:justify-between md:items-center md:px-4 lg:container lg:flex lg:mx-auto lg:gap-12 lg:justify-between lg:items-center lg:px-4">
@@ -80,7 +80,7 @@ export const ContactForm = () => {
             className="bg-gray-50 border py-2 md:py-3 px-4 border-gray-300 text-xs md:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 cursor-pointer hover:text-indigo-600"
             style={{ backgroundColor: "#181818"}}
           >
-            Send Message
+            {sendButtonText}
           </button>
           </div>
           {isSuccessfullySubmited && <EmailSubmission />}

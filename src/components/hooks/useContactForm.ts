@@ -14,9 +14,12 @@ const DEFAULT_CONTACT_FORM = {
   message: ""
 }
 
+const DEFAULT_SENT_BUTTON_TEXT = "Send Message"
+
 export const useContactForm = () => {
   const [contactForm, setContactForm] = useState<ContactFormProps>(DEFAULT_CONTACT_FORM)
   const [isSuccessfullySubmited, setIsSuccessfullySubmited] = useState<Boolean>(false)
+  const [sendButtonText, setSendButtonText] = useState<string>(DEFAULT_SENT_BUTTON_TEXT)
 
   const formInputChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
     const name = event.target.name
@@ -36,8 +39,15 @@ export const useContactForm = () => {
 
   const formSubmitHandler = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    submitUserInputToFormspree(contactForm)
-    resetForm()
+    setSendButtonText("Sending")
+
+    try {
+      submitUserInputToFormspree(contactForm)
+      resetForm()
+    } catch (error: any) {
+      console.log(error.message)
+    }
+
   }
 
   const submitUserInputToFormspree = async (formData: ContactFormProps) => {
@@ -49,7 +59,10 @@ export const useContactForm = () => {
       body: JSON.stringify(formData)
     })
 
-    setIsSuccessfullySubmited(response.ok)
+    if (response.ok) {
+      setIsSuccessfullySubmited(response.ok)
+      setSendButtonText("Done")
+    }
   }
 
   const resetForm = () => {
@@ -63,6 +76,7 @@ export const useContactForm = () => {
   return {
     contactForm,
     isSuccessfullySubmited,
+    sendButtonText,
     onFormInputChangeHandler: formInputChangeHandler,
     onFormTextAreaChangeHandler: formTextAreaChangeHandler,
     onFormSubmitHandler: formSubmitHandler
