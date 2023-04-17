@@ -10,7 +10,7 @@ export const WhoAmIText = () => {
       <p className="text-base mx-4 leading-5 text-center mb-8 sm:text-center sm:mx-0 md:w-11/12 md:text-lg md:text-left lg:w-11/12 lg:text-left">
         I am a full-stack developer and creative designer, I have extensive experience developing projects from ideation to deployment.
         I thrive on creative problem-solving, using my technical skills and artistic vision to build elegant solutions.
-        With a commitment to innovation, I am always eager to explore new techniques and technologies to further hone my skills.
+        I am always eager to explore new techniques and technologies to further hone my skills.
       </p>
     </div>
   )
